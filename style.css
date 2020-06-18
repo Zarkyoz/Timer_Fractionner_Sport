@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+}
+header{
+    background-color: #00418b;
+    text-align: center;
+}
+#titrePage{
+    margin: 0;
+    font-size: 100px;
+    text-shadow: -10px -10px hsla(0, 0%, 54%, 0.596);
+}
+main{
+/* border: solid; */
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#cadreChrono{
+    /* background-color: rgba(0, 0, 255, 0.685); */
+    border: solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+}
+#display{
+    margin: 0;
+    /* border: solid blue; */
+    border-radius: 5em;
+    width: 60%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+}
+#partieBtn{
+    /* border: solid blue; */
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#partieBtnUn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#partieBtnDeux{
+    width: 150px;
+}
