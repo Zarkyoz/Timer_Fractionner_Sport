@@ -64,14 +64,40 @@ validation.addEventListener('click', function () {
 //     display.backgroundColor='#11ffee00;'
 // })
 
-
 // création du chrono
 var vitesseChrono = 1000;
+
 // Audio des 2 BIP
+var btnSonPPlus = document.getElementById('btnSonPPlus')
+var btnSonPMoins = document.getElementById('btnSonPMoins')
+var jaugePre = document.getElementById('jaugePre')
 var prevention = new Audio()
 prevention.src = "Audio/prevention.mp3"
-var changement = new Audio()
-changement.src = "Audio/changement.mp3"
+prevention.volume = 0.5
+var jp = 50
+jaugePre.style.width = jp + "%"; 
+btnSonPPlus.addEventListener('click', function(){if(prevention.volume < 0.9){ prevention.volume += 0.1; jp += 10; jaugePre.style.width = jp + "%"; console.log(prevention.volume) }});
+btnSonPMoins.addEventListener('click', function(){if(prevention.volume > 0.1){ prevention.volume -= 0.1; jp -= 10; jaugePre.style.width = jp + "%"; console.log(prevention.volume) }});
+
+
+
+
+var btnSonCPlus = document.getElementById('btnSonCPlus');
+var btnSonCMoins = document.getElementById('btnSonCMoins');
+var jaugeCha = document.getElementById('jaugeCha');
+var changement = new Audio();
+changement.src = "Audio/changement.mp3";
+changement.volume = 0.5 ;
+var ja = 50
+jaugeCha.style.width = ja + '%';
+
+btnSonCPlus.addEventListener('click', function(){if(changement.volume < 0.9){changement.volume += 0.1; ja += 10; jaugeCha.style.width = ja+"%"; console.log(changement.volume)  }});
+btnSonCMoins.addEventListener('click', function(){if(changement.volume > 0.1){changement.volume -= 0.1; ja -= 10; jaugeCha.style.width = ja+"%"; console.log(changement.volume)  }});
+
+
+
+
+
 display.textContent = chrono;
 
 // bouton image lecture/pause/stop
