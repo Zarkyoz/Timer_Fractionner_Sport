@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    height: 80vh;
+    height: 90vh;
 }
 header{
     background-color: #00418b;
@@ -14,6 +14,7 @@ header{
 }
 main{
 /* border: solid; */
+/* background-color: purple; */
 height: 100%;
 display: flex;
 flex-direction: column;
@@ -22,13 +23,16 @@ align-items: center;
 }
 #cadreChrono{
     /* background-color: rgba(0, 0, 255, 0.685); */
+    position: relative;
     border: solid purple;
+    border-radius: 2em;
+    /* background-color: white; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 #display{
     margin: 0;
@@ -58,4 +62,22 @@ align-items: center;
 }
 #partieBtnDeux{
     width: 150px;
+}
+#actif{
+    width: 5em;
+}
+#repos{
+    width: 5em;
+}
+#flashText{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+}
+.btnAction{
+    border-radius: 10px;
+    background-color: blue;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
 }

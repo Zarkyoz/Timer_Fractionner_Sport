@@ -15,21 +15,24 @@
         <!-- <h1>Timer</h1> -->
             <article id="cadreChrono">
                 <section id="partieBtnUn">
-                    <!-- faire les 2 input qui recupère actif et repo -->
+                    <!-- faire les 2 inputs qui recupère actif et repo -->
                     <form action="#" method="get" name="form" style='text-align:center;'>
 
-                        <p><label for="actif">Effort</label>
-                            <input type="number" placeholder="Temps en seconde" name="inputActif" id="actif"></p>
-                        <p><label for="repos">Repos</label>
-                            <input type="number" placeholder="Temps en seconde" name="inputRepos" id="repos"></p>
+                        <p><label for="actif">Effort : </label>
+                            <input type="number" min="0" placeholder="Seconde" name="inputActif" id="actif"></p>
+                        <p><label for="repos">Repos : </label>
+                            <input type="number" min="0" placeholder="Seconde" name="inputRepos" id="repos"></p>
                     </form>
 
                         
-                            <button id="validation" value="Validez">validation</button>
+                            <button id="validation" class="btnAction" value="Validez">validation</button>
                     
 
                 </section>
-                <section id="partieBtnDeux"></section>
+                <section>
+                    <article id="flashText"></article>
+                    <article id="partieBtnDeux"></article>
+                </section>
 
 
 
